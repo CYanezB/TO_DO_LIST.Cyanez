@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+header {
+    background-color: black;
+    height: 4em;
+}
+
+header div:first-child {
+    margin: auto 3em;
+    margin-right: 1em;
+}
+
+header div:nth-child(2) {
+    margin: auto 3em;
+    margin-left: 0em;
+    margin-right: 1em;
+}
+
+header div:nth-child(2) select {
+    width: 200px;
+}
+
+header div.guardar {
+    margin: auto 0em;
+    background-color: green;
+    color: white;
+    border-radius: 30px;
+    width: 150px;
+    text-align: center;
+    height: 2em;
+    cursor: pointer;
+}
+
+header div.guardar:hover {
+    border: 1px solid white;
+    background-color: darkgreen;
+}
+
+header div.guardar p {
+    margin: 0em;
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+
+div#filtro.d-flex {
+    background-color: gray;
+    height: 3em;
+}
+
+div#filtro.d-flex div.filtroPrioridad {
+    margin: auto 1em;
+}
+
+div#filtro.d-flex div.filtroPrioridad select {
+    width: 150px;
+}
+
+div#filtro.d-flex div.filtroTexto {
+    margin: auto 1em;
+}
+
+section article {
+    padding: 2em;
+    border: 1px solid black;
+    justify-content: space-between;
+}
+
+section article div.borrar {
+    margin: auto 0em;
+    background-color: red;
+    color: white;
+    border-radius: 30px;
+    width: 150px;
+    text-align: center;
+    height: 2em;
+    cursor: pointer;
+    border: 1px solid black;
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+section article div.borrar:hover {
+    background-color: darkred;
+    border: 2px solid gold;
+}
+
+
+.diaria {
+    background-color: yellow;
+}
+
+.urgente {
+    background-color: red;
+}
+
+section article.urgente div.borrar {
+    background-color: darkred;
+}
+
+.mensual {
+    background-color: green;
+}
+
+footer {
+    background-color: black;
+    padding: 1.25em 0em;
+    text-align: center;
+    color: white;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    z-index: 100;
+}

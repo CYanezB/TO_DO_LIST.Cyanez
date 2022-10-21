@@ -6,14 +6,66 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
     <script src="./js/data.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+
 </head>
 
 <body>
 
 
+    <header class="d-flex">
+        <div class="d-block">
+            <input type="text">
+        </div>
+        <div>
+            <select id="selectPrioridad">
+                <option value="urgente">URGENTE</option>
+                <option value="diaria">DIARIA</option>
+                <option value="mensual">MENSUAL</option>
+            </select>
 
+        </div>
+        <div class="guardar">
+            <p>Guardar</p>
+        </div>
+    </header>
+
+    <div class="d-flex" id="filtro">
+        <div class="filtroPrioridad d-block">
+            <select id="selectPrioridad">
+                <option value="urgente">URGENTE</option>
+                <option value="diaria">DIARIA</option>
+                <option value="mensual">MENSUAL</option>
+            </select>
+        </div>
+        <div class="filtroTexto d-block">
+            <input type="text">
+        </div>
+    </div>
+
+
+    <section>
+        <article class="diaria d-flex">
+            <h2>Sacar a pasear al perrito</h2>
+            <div class="borrar" data-tareaid="349">Borrar</div class="borrar">
+        </article>
+        <article class="urgente d-flex">
+            <h2>Estudiar Promesas JS</h2>
+            <div class=" borrar" class="btn-info" data-tareaid="9">Borrar</div class="borrar">
+        </article>
+        <article class="mensual d-flex">
+            <h2>Escuchar música</h2>
+            <div class="borrar" data-tareaid="9">Borrar</div class="borrar">
+        </article>
+    </section>
+
+    <footer>
+        <h2>APP "TO DO'S" CYBP</h2>
+    </footer>
     <script src="./js/functions.js"></script>
 </body>
 
