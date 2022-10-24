@@ -14,53 +14,45 @@
 
 </head>
 
-<body>
+<body onload="load()">
 
 
     <header class="d-flex">
-        <div class="d-block">
-            <input type="text">
-        </div>
-        <div>
-            <select id="selectPrioridad">
-                <option value="urgente">URGENTE</option>
-                <option value="diaria">DIARIA</option>
-                <option value="mensual">MENSUAL</option>
-            </select>
+        <form class="d-flex">
+            <div class="d-block">
+                <input type="text" name="tarea" id="inputTarea">
+            </div>
+            <div>
+                <select name="prioridad" id="selectPrioridad">
+                    <option value="urgente">URGENTE</option>
+                    <option value="diaria">DIARIA</option>
+                    <option value="mensual">MENSUAL</option>
+                </select>
 
-        </div>
-        <div class="guardar">
-            <p>Guardar</p>
-        </div>
+            </div>
+
+            <div class="guardar">
+                <input type="submit" id="btnGuardar" value="Guardar">
+            </div>
+        </form>
     </header>
 
     <div class="d-flex" id="filtro">
+        <h4>FILTRAR:</h4>
         <div class="filtroPrioridad d-block">
-            <select id="selectPrioridad">
+            <select id="filterPrioridad" onchange="filtrarPorPrioridad()">
                 <option value="urgente">URGENTE</option>
                 <option value="diaria">DIARIA</option>
                 <option value="mensual">MENSUAL</option>
             </select>
         </div>
         <div class="filtroTexto d-block">
-            <input type="text">
+            <input type="text" id="filterText" onkeyup="filtrarPorTexto()">
         </div>
     </div>
 
+    <section id="tareas">
 
-    <section>
-        <article class="diaria d-flex">
-            <h2>Sacar a pasear al perrito</h2>
-            <div class="borrar" data-tareaid="349">Borrar</div class="borrar">
-        </article>
-        <article class="urgente d-flex">
-            <h2>Estudiar Promesas JS</h2>
-            <div class=" borrar" class="btn-info" data-tareaid="9">Borrar</div class="borrar">
-        </article>
-        <article class="mensual d-flex">
-            <h2>Escuchar música</h2>
-            <div class="borrar" data-tareaid="9">Borrar</div class="borrar">
-        </article>
     </section>
 
     <footer>

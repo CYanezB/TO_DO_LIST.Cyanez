@@ -8,6 +8,15 @@
 header {
     background-color: black;
     height: 4em;
+    justify-content: center;
+}
+
+.d-flex h4 {
+    margin: 1em;
+    font-size: 1em;
+    color: aliceblue;
+    font-weight: bold;
+    margin-right: 0em;
 }
 
 header div:first-child {
@@ -25,20 +34,38 @@ header div:nth-child(2) select {
     width: 200px;
 }
 
-header div.guardar {
-    margin: auto 0em;
-    background-color: green;
-    color: white;
-    border-radius: 30px;
+input[type=submit] {
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    line-height: 16px;
+    padding: 11px;
+    border-radius: 9px;
+    font-family: Georgia, serif;
+    font-weight: normal;
+    text-decoration: none;
+    font-style: normal;
+    font-variant: normal;
+    text-transform: none;
+    background-image: linear-gradient(rgb(26, 255, 0) 0%, rgb(0, 0, 0) 100%);
+    box-shadow: rgb(0, 0, 0) 5px 5px 15px 5px;
+    border: 2px solid black;
+    display: inline-block;
     width: 150px;
-    text-align: center;
-    height: 2em;
-    cursor: pointer;
 }
 
-header div.guardar:hover {
+header div.guardar {
+    margin: auto 0em;
+
+}
+
+input[type=submit]:hover {
     border: 1px solid white;
-    background-color: darkgreen;
+    background: darkgreen;
+}
+
+input[type=submit]:active {
+    background: #000000;
+    font-size: small;
 }
 
 header div.guardar p {
@@ -51,6 +78,8 @@ header div.guardar p {
 div#filtro.d-flex {
     background-color: gray;
     height: 3em;
+    align-items: center;
+    justify-content: center;
 }
 
 div#filtro.d-flex div.filtroPrioridad {
@@ -99,9 +128,10 @@ section article div.borrar:hover {
     background-color: red;
 }
 
+/* 
 section article.urgente div.borrar {
     background-color: darkred;
-}
+} */
 
 .mensual {
     background-color: green;
@@ -116,4 +146,26 @@ footer {
     width: 100%;
     bottom: 0;
     z-index: 100;
+}
+
+.btnBorrar {
+    color: rgb(255, 255, 255);
+    width: 150px;
+    font-size: 20px;
+    line-height: 20px;
+    padding: 11px;
+    border-radius: 9px;
+    background-image: linear-gradient(rgb(255, 0, 0) 0%, rgb(0, 0, 0) 100%);
+    box-shadow: rgb(0, 0, 0) 5px 5px 15px 5px;
+    border: 2px solid black;
+}
+
+.btnBorrar:hover {
+    background: #FF0000;
+    border: 2px solid white;
+}
+
+.btnBorrar:active {
+    font-size: 1em;
+    background: #000000;
 }
